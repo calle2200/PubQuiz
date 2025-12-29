@@ -1,0 +1,13 @@
+main {
+    height: 510px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f1f3f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #333333;
+}
