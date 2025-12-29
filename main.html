@@ -6,38 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css?rnd=12345">
+    <link rel="stylesheet" href="style.css?rnd=12345">
     <link rel="stylesheet" href="css/pages/animate.css?rnd=12345">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <input type="checkbox" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-
-        <h1 class="title">Carl Lindström<span>.</span></h1>
 
         <nav class="navbar">
-            <a href="showHide.html">Show/Hide</a>
-            <a href="fade.html">Fade</a>
-            <a href="animate.html">Animate</a>
+            <a href="guessPrice.html"><img src="images/priceTag.png" alt="Guess Price" class="nav-icon"></a>
+            <a href="musicQuiz.html"><img src="images/musicNote.png" alt="Music Quiz" class="nav-icon"></a>
+            <a href="trivia.html"><img src="images/trivia.png" alt="Trivia" class="nav-icon"></a>
         </nav>
     </header>
-    <main>
-        <h1>Animation</h1>
-        <section class="mainSection">
-            <section id="animationSection">
-                <p id="animationP">Mini cheeseburgare</p>
-                <img id="cheeseburger" src="images/cheeseburgare.jpg" alt="">
-                <button id="animationButton">Tryck för magi</button>
-            </section>
-        </section>
-    </main>
 
-    <footer>
-        
-    </footer>
+    <div class="main-container">
+        <main class="main-left">
+    <h1>Poängtavla</h1>
+    <div class="team-row">
+        <span class="team-name">Lag A</span>
+        <span class="team-points">10 poäng</span>
+    </div>
+    <div class="team-row">
+        <span class="team-name">Lag B</span>
+        <span class="team-points">8 poäng</span>
+    </div>
+    <div class="team-row">
+        <span class="team-name">Lag C</span>
+        <span class="team-points">12 poäng</span>
+    </div>
+    <div class="team-row">
+        <span class="team-name">Lag D</span>
+        <span class="team-points">6 poäng</span>
+    </div>
+</main>
+
+        <main class="main-right">
+            
+        </main>
+    </div>
+
+   
     <script src="js/animation.js"></script>
 </body>
 
