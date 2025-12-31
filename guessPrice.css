@@ -1,6 +1,6 @@
 main {
-    height: 510px;
-    max-width: 600px;
+    height: 260px;
+    max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background: #f1f3f4;
@@ -14,7 +14,7 @@ main h2 {
 
 .slideshow-container {
     position: relative;
-    max-width: 400px; /* bredd på bildspelet */
+    max-width: 200px; /* bredd på bildspelet */
     margin: 50px auto; /* centrera i main */
     display: flex;
     align-items: center;
