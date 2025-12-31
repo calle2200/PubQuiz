@@ -1,8 +1,8 @@
 main {
-    height: 260px;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
+    height: 210px;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px;
     background: #f1f3f4;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@ main h2 {
 
 .slideshow-container {
     position: relative;
-    max-width: 200px; /* bredd på bildspelet */
+    max-width: 150px; /* bredd på bildspelet */
     margin: 50px auto; /* centrera i main */
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ main h2 {
     color: white;
     border: none;
     padding: 12px 18px;
-    font-size: 24px;
+    font-size: 10px;
     cursor: pointer;
     border-radius: 5px;
 }
