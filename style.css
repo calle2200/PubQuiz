@@ -63,6 +63,16 @@ body {
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
+.team-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .team-row {
     display: flex;
     justify-content: space-between; /* namn till vänster, poäng till höger */
@@ -80,7 +90,8 @@ body {
 }
 
 .team-points {
-    color: #007bff;
+    color: #000b16;
+    font-weight: bold;
 }
 
 
@@ -90,6 +101,65 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+
+/* Wrapper för poäng + knappar */
+.points-wrapper {
+    margin-left: auto; /* skjuter hela blocket till höger */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* fast avstånd mellan −, poäng och + */
+}
+
+/* Siffran */
+.team-points {
+    min-width: 32px; /* säkerställer att siffran inte krymper */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Plus- och minusknappar */
+.plus-point,
+.minus-point {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.todo-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+#add-todo {
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column; /* stapla todo-items vertikalt */
+    gap: 8px; /* avstånd mellan raderna */
+}
+
+.todo-item {
+    background-color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
 
 footer {
     min-height: 100px;

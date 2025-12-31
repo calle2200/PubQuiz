@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animate</title>
+    <title>Nyår PubQuiz</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css?rnd=12345">
     <link rel="stylesheet" href="guessPrice.css">
@@ -13,29 +13,28 @@
 
 <body>
     <header>
-        <input type="checkbox" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-
-        <h1 class="title">Carl Lindström<span>.</span></h1>
+        
 
         <nav class="navbar">
-            <a href="showHide.html">Show/Hide</a>
-            <a href="fade.html">Fade</a>
-            <a href="animate.html">Animate</a>
+            <a href="main.html"><img src="images/priceTag.png" alt="Guess Price" class="nav-icon"></a>
+            <a href="musicQuiz.html"><img src="images/musicNote.png" alt="Music Quiz" class="nav-icon"></a>
+            <a href="trivia.html"><img src="images/trivia.png" alt="Trivia" class="nav-icon"></a>
         </nav>
     </header>
     <main>
-        <h1>Animation</h1>
-        <section class="mainSection">
-            <section id="animationSection">
-                <p id="animationP">Mini cheeseburgare</p>
-                <img id="cheeseburger" src="images/cheeseburgare.jpg" alt="">
-                <button id="animationButton">Tryck för magi</button>
-            </section>
-        </section>
-    </main>
+    <div class="slideshow-container">
+        <button class="prev">&lt;</button>
+        <img class="slide" src="images/shopping.webp" alt="Bild 1">
+        <img class="slide" src="images/nedladdning.jpg" alt="Bild 2">
+        <img class="slide" src="images/nedladdning (1).jpg" alt="Bild 3">
+        <img class="slide" src="images/nedladdning (2).jpg" alt="Bild 4">
+        <img class="slide" src="images/nedladdning (3).jpg" alt="Bild 5">
+        <button class="next">&gt;</button>
+    </div>
+</main>
 
-    <script src="js/animation.js"></script>
+
+    <script src="guessPrice.js"></script>
 </body>
 
 </html>

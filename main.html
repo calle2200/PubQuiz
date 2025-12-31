@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animate</title>
+    <title>Nyår PubQuiz</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css?rnd=12345">
     <link rel="stylesheet" href="css/pages/animate.css?rnd=12345">
@@ -23,32 +23,62 @@
 
     <div class="main-container">
         <main class="main-left">
-    <h1>Poängtavla</h1>
-    <div class="team-row">
-        <span class="team-name">Lag A</span>
-        <span class="team-points">10 poäng</span>
-    </div>
-    <div class="team-row">
-        <span class="team-name">Lag B</span>
-        <span class="team-points">8 poäng</span>
-    </div>
-    <div class="team-row">
-        <span class="team-name">Lag C</span>
-        <span class="team-points">12 poäng</span>
-    </div>
-    <div class="team-row">
-        <span class="team-name">Lag D</span>
-        <span class="team-points">6 poäng</span>
-    </div>
-</main>
+            <h1>Poängtavla</h1>
+            <div class="team-row" data-team="A">
+                <input type="text" class="team-input" placeholder="Skriv lagnamn">
+                <button class="save-team">OK</button>
+                <span class="team-name hidden"></span>
+                <div class="points-wrapper">
+                    <button class="minus-point">−</button>
+                    <span class="team-points">0</span>
+                    <button class="plus-point">+</button>
+                </div>
+            </div>
+            <div class="team-row" data-team="B">
+                <input type="text" class="team-input" placeholder="Skriv lagnamn">
+                <button class="save-team">OK</button>
+                <span class="team-name hidden"></span>
+                <div class="points-wrapper">
+                    <button class="minus-point">−</button>
+                    <span class="team-points">0</span>
+                    <button class="plus-point">+</button>
+                </div>
+            </div>
+            <div class="team-row" data-team="C">
+                <input type="text" class="team-input" placeholder="Skriv lagnamn">
+                <button class="save-team">OK</button>
+                <span class="team-name hidden"></span>
+                <div class="points-wrapper">
+                    <button class="minus-point">−</button>
+                    <span class="team-points">0</span>
+                    <button class="plus-point">+</button>
+                </div>
+            </div>
+            <div class="team-row" data-team="D">
+                <input type="text" class="team-input" placeholder="Skriv lagnamn">
+                <button class="save-team">OK</button>
+                <span class="team-name hidden"></span>
+                <div class="points-wrapper">
+                    <button class="minus-point">−</button>
+                    <span class="team-points">0</span>
+                    <button class="plus-point">+</button>
+                </div>
+            </div>
+        </main>
 
         <main class="main-right">
-            
+            <h2>Regler</h2>
+            <div class="todo-input-container">
+                <input type="text" id="todo-input" placeholder="Skriv regel...">
+                <button id="add-todo">Lägg till</button>
+            </div>
+            <div id="todo-list"></div>
         </main>
+
     </div>
 
-   
-    <script src="js/animation.js"></script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
